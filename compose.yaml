@@ -1,0 +1,12 @@
+﻿services:
+  coursemanagementsystem:
+    container_name: cms
+    build:
+      context: ./CourseManagementSystem
+      dockerfile: Dockerfile
+    ports:
+      - "5092:5092"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=pg-server-course-management.postgres.database.azure.com;Port=5432;Database=CourseDb;Username=postgres;Password=eAdmin123;SslMode=Require
+
