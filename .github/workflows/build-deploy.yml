@@ -35,6 +35,11 @@ jobs:
       - name: Publish
         run: dotnet publish CourseManagementSystem.sln --configuration Release --output ./publish
 
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          public-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
