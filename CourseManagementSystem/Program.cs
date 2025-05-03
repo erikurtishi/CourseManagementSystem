@@ -8,9 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5092";
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(5092);
+    options.ListenAnyIP(int.Parse(port));
 });
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
