@@ -11,3 +11,5 @@ riderModule.iml
 .idea/
 *.env
 docker-compose.override.yml
+CourseManagementSystem/appsettings.json
+compose.yaml
