@@ -1,4 +1,4 @@
-name: Build and Deploy .NET App to Azure Web App
+name: Building and Deploying .NET App to Azure Web App
 
 on:
   push:
