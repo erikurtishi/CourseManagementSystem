@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: course-management-system
+  AZURE_WEBAPP_NAME: course-management
   DOTNET_VERSION: "8.0.x"
   SOLUTION_PATH: "CourseManagementSystem.sln"
   API_PROJECT_PATH: "CourseManagementSystem"
