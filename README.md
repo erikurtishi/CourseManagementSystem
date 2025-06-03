@@ -342,7 +342,7 @@ To test the API with initial data, you can hardcode sample students and courses 
 
 ## 🔗 Resources
 
-- [Swagger UI](https://course-management-system.azurewebsites.net/swagger)
+- [Swagger UI](https://course-management-f0a7ghfnfuagh0d9.italynorth-01.azurewebsites.net/swagger/index.html)
 - [GitHub Repository](https://github.com/erikurtishi/CourseManagementSystem)
 
 ---
