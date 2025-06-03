@@ -7,7 +7,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: course-management
-  DOTNET_VERSION: "8.0.x"
+  DOTNET_VERSION: "8.x.x"
   SOLUTION_PATH: "CourseManagementSystem.sln"
   API_PROJECT_PATH: "CourseManagementSystem"
   PUBLISH_DIR: "./publish"
